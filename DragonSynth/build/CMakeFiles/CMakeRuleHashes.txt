@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+7a38004aca9864b5ce55e5dc84e482ab DragonSynth_artefacts/JuceLibraryCode/JuceHeader.h

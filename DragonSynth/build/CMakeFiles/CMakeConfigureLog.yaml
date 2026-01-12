@@ -1,0 +1,591 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.1.147 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /workspace/DragonSynth/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /workspace/DragonSynth/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g"
+      binary: "/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a2732/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a2732.dir/build.make CMakeFiles/cmTC_a2732.dir/build
+        gmake[1]: Entering directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g'
+        Building C object CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -MD -MT CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g -v -fcoverage-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_a2732
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2732.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -o cmTC_a2732 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a2732 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a2732/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a2732.dir/build.make CMakeFiles/cmTC_a2732.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g']
+        ignore line: [Building C object CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -MD -MT CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g -v -fcoverage-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-ZEBK7g -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_a2732]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2732.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -o cmTC_a2732 ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a2732 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a2732] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_a2732.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv"
+      binary: "/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_994c1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_994c1.dir/build.make CMakeFiles/cmTC_994c1.dir/build
+        gmake[1]: Entering directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv'
+        Building CXX object CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv -v -fcoverage-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_994c1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_994c1.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_994c1 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_994c1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14] ==> [/usr/include/x86_64-linux-gnu/c++/14]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/x86_64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_994c1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_994c1.dir/build.make CMakeFiles/cmTC_994c1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv']
+        ignore line: [Building CXX object CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv -v -fcoverage-compilation-dir=/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-35lphv -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_994c1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_994c1.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_994c1 ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_994c1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_994c1] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_994c1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/juce-src/extras/Build/CMake/JUCECheckAtomic.cmake:64 (try_compile)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCECheckAtomic.cmake:119 (_juce_create_atomic_target)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEModuleSupport.cmake:44 (include)"
+      - "build/_deps/juce-src/CMakeLists.txt:41 (include)"
+    directories:
+      source: "/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp"
+      binary: "/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4aba7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4aba7.dir/build.make CMakeFiles/cmTC_4aba7.dir/build
+        gmake[1]: Entering directory '/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_4aba7.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o
+        /usr/bin/c++   -std=c++17 -MD -MT CMakeFiles/cmTC_4aba7.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o -MF CMakeFiles/cmTC_4aba7.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o.d -o CMakeFiles/cmTC_4aba7.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o -c /workspace/DragonSynth/build/_deps/juce-build/check_atomic_0aAYHV5agY0BOtrx.cpp
+        Linking CXX executable cmTC_4aba7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4aba7.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_4aba7.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o -o cmTC_4aba7 
+        /usr/bin/ld: CMakeFiles/cmTC_4aba7.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o: in function `std::__atomic_base<long long>::is_lock_free() const':
+        check_atomic_0aAYHV5agY0BOtrx.cpp:(.text._ZNKSt13__atomic_baseIxE12is_lock_freeEv[_ZNKSt13__atomic_baseIxE12is_lock_freeEv]+0x19): undefined reference to `__atomic_is_lock_free'
+        c++: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_4aba7.dir/build.make:100: cmTC_4aba7] Error 1
+        gmake[1]: Leaving directory '/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_4aba7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/juce-src/extras/Build/CMake/JUCECheckAtomic.cmake:71 (try_compile)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCECheckAtomic.cmake:119 (_juce_create_atomic_target)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEModuleSupport.cmake:44 (include)"
+      - "build/_deps/juce-src/CMakeLists.txt:41 (include)"
+    directories:
+      source: "/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp"
+      binary: "/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d6e1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d6e1.dir/build.make CMakeFiles/cmTC_3d6e1.dir/build
+        gmake[1]: Entering directory '/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_3d6e1.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o
+        /usr/bin/c++   -std=c++17 -MD -MT CMakeFiles/cmTC_3d6e1.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o -MF CMakeFiles/cmTC_3d6e1.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o.d -o CMakeFiles/cmTC_3d6e1.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o -c /workspace/DragonSynth/build/_deps/juce-build/check_atomic_0aAYHV5agY0BOtrx.cpp
+        Linking CXX executable cmTC_3d6e1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d6e1.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_3d6e1.dir/check_atomic_0aAYHV5agY0BOtrx.cpp.o -o cmTC_3d6e1  -latomic 
+        gmake[1]: Leaving directory '/workspace/DragonSynth/build/_deps/juce-build/check_atomic_dir_5kgCOECUrY03W36k/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEModuleSupport.cmake:50 (try_compile)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEModuleSupport.cmake:60 (_juce_find_target_architecture)"
+      - "build/_deps/juce-src/CMakeLists.txt:41 (include)"
+    directories:
+      source: "/workspace/DragonSynth/build/_deps/juce-build/CMakeFiles/CMakeTmp"
+      binary: "/workspace/DragonSynth/build/_deps/juce-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/DragonSynth/build/_deps/juce-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba90d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ba90d.dir/build.make CMakeFiles/cmTC_ba90d.dir/build
+        gmake[1]: Entering directory '/workspace/DragonSynth/build/_deps/juce-build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_ba90d.dir/juce_runtime_arch_detection.cpp.o
+        /usr/bin/c++   -std=gnu++17 -MD -MT CMakeFiles/cmTC_ba90d.dir/juce_runtime_arch_detection.cpp.o -MF CMakeFiles/cmTC_ba90d.dir/juce_runtime_arch_detection.cpp.o.d -o CMakeFiles/cmTC_ba90d.dir/juce_runtime_arch_detection.cpp.o -c /workspace/DragonSynth/build/_deps/juce-src/extras/Build/CMake/juce_runtime_arch_detection.cpp
+        /workspace/DragonSynth/build/_deps/juce-src/extras/Build/CMake/juce_runtime_arch_detection.cpp:48:4: error: JUCE_ARCH x86_64
+           48 |   #error JUCE_ARCH x86_64
+              |    ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_ba90d.dir/build.make:79: CMakeFiles/cmTC_ba90d.dir/juce_runtime_arch_detection.cpp.o] Error 1
+        gmake[1]: Leaving directory '/workspace/DragonSynth/build/_deps/juce-build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_ba90d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake:1015 (find_package)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake:1054 (_juce_add_vst3_manifest_helper_target)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake:1120 (juce_enable_vst3_manifest_step)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake:1321 (_juce_set_plugin_target_properties)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake:1460 (_juce_link_plugin_wrapper)"
+      - "build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake:2019 (_juce_configure_plugin_targets)"
+      - "CMakeLists.txt:21 (juce_add_plugin)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-isqfM7"
+      binary: "/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-isqfM7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-isqfM7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0a42a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0a42a.dir/build.make CMakeFiles/cmTC_0a42a.dir/build
+        gmake[1]: Entering directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-isqfM7'
+        Building C object CMakeFiles/cmTC_0a42a.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_0a42a.dir/src.c.o -MF CMakeFiles/cmTC_0a42a.dir/src.c.o.d -o CMakeFiles/cmTC_0a42a.dir/src.c.o -c /workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-isqfM7/src.c
+        Linking C executable cmTC_0a42a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a42a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_0a42a.dir/src.c.o -o cmTC_0a42a 
+        gmake[1]: Leaving directory '/workspace/DragonSynth/build/CMakeFiles/CMakeScratch/TryCompile-isqfM7'
+        
+      exitCode: 0
+...
